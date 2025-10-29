@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>PawSafe Animal Charity</title>
+  </head>
+  <body>
+    <header>
+      <h1>🐾 PawSafe Charity</h1>
+      <div class="menu-toggle" id="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <nav id="navbar">
+        <a href="#about">About</a>
+        <a href="#programs">Programs</a>
+        <a href="#donate">Donate</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section id="about">
+      <h2>Our Mission</h2>
+      <p>
+        PawSafe Animal Charity is dedicated to rescuing, protecting, and
+        improving the lives of abandoned and abused animals. Our goal is to
+        create a world where every animal feels loved, safe, and cared for.
+      </p>
+      <div class="mission">
+        <div class="card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLP1chgavLUMe3Y4RjE-eYDkXMQFX0n5YnsQ&s"
+            alt="Animal Rescue"
+          />
+          <h3>Rescue & Shelter</h3>
+          <p>
+            We provide shelter, food, and medical care to rescued animals in
+            need.
+          </p>
+        </div>
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1560807707-8cc77767d783"
+            alt="Adoption"
+          />
+          <h3>Adoption Programs</h3>
+          <p>
+            Connecting loving families with pets ready for their forever homes.
+          </p>
+        </div>
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1583336663277-620dc1996580"
+            alt="Awareness"
+          />
+          <h3>Awareness Drives</h3>
+          <p>
+            Promoting animal welfare through community education and outreach.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="programs">
+      <h2>Our Programs</h2>
+      <div class="programs">
+        <div class="card">
+          <h3>Medical Support</h3>
+          <p>
+            We organize free vaccination and sterilization drives for stray
+            animals.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Animal Rehabilitation</h3>
+          <p>Providing therapy and recovery programs for injured animals.</p>
+        </div>
+        <div class="card">
+          <h3>Volunteer Program</h3>
+          <p>
+            Join our team of dedicated volunteers and make a difference in
+            animal lives.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="donate">
+      <h2>Ways to Donate</h2>
+      <p>
+        You can support us through your generous donations. Every contribution
+        helps an animal in need.
+      </p>
+      <div class="donate">
+        <div class="card">
+          <h3>Online Donation</h3>
+          <p>Make a secure donation online using UPI, credit, or debit card.</p>
+          <button class="btn" onclick="donateNow('Online')">
+            Donate Online
+          </button>
+        </div>
+        <div class="card">
+          <h3>In-Kind Donations</h3>
+          <p>
+            Contribute food, medicines, or supplies directly to our shelter.
+          </p>
+          <button class="btn" onclick="donateNow('In-Kind')">
+            Contribute Items
+          </button>
+        </div>
+        <div class="card">
+          <h3>Volunteer Support</h3>
+          <p>
+            Donate your time and skills — help with events, care, or awareness
+            campaigns.
+          </p>
+          <button class="btn" onclick="donateNow('Volunteer')">
+            Join as Volunteer
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>
+        Have questions or want to get involved? Send us a message — we’d love to
+        hear from you!
+      </p>
+      <form class="contact-form" onsubmit="return submitForm(event)">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" required />
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" required />
+
+        <label for="message">Your Message</label>
+        <textarea id="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>© 2025 PawSafe Animal Charity | Together for a Kinder World 🐾</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
